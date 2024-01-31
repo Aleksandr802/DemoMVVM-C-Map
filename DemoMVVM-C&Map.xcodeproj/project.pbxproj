@@ -10,12 +10,21 @@
 		D73E96702B645E970032003A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E966F2B645E970032003A /* AppDelegate.swift */; };
 		D73E96722B645E970032003A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96712B645E970032003A /* SceneDelegate.swift */; };
 		D73E96742B645E970032003A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96732B645E970032003A /* ViewController.swift */; };
-		D73E96772B645E970032003A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73E96752B645E970032003A /* Main.storyboard */; };
 		D73E96792B645E980032003A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73E96782B645E980032003A /* Assets.xcassets */; };
 		D73E967C2B645E980032003A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73E967A2B645E980032003A /* LaunchScreen.storyboard */; };
 		D73E96872B645E980032003A /* DemoMVVM_C_MapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96862B645E980032003A /* DemoMVVM_C_MapTests.swift */; };
 		D73E96912B645E980032003A /* DemoMVVM_C_MapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96902B645E980032003A /* DemoMVVM_C_MapUITests.swift */; };
 		D73E96932B645E980032003A /* DemoMVVM_C_MapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96922B645E980032003A /* DemoMVVM_C_MapUITestsLaunchTests.swift */; };
+		D73E96A42B64697A0032003A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96A32B64697A0032003A /* AppCoordinator.swift */; };
+		D73E96A62B648B210032003A /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96A52B648B210032003A /* TabCoordinator.swift */; };
+		D73E96AE2B64A2A00032003A /* RecreationMapTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96AD2B64A2A00032003A /* RecreationMapTabCoordinator.swift */; };
+		D73E96B02B64A34E0032003A /* ListTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96AF2B64A34D0032003A /* ListTabCoordinator.swift */; };
+		D73E96B22B64A38E0032003A /* ProfileTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73E96B12B64A38E0032003A /* ProfileTabCoordinator.swift */; };
+		D7BBBD312B6861BA00B89F09 /* PlacesLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBBD302B6861BA00B89F09 /* PlacesLookupView.swift */; };
+		D7BBBD332B68794100B89F09 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBBD322B68794100B89F09 /* Place.swift */; };
+		D7BBBD352B68818F00B89F09 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BBBD342B68818F00B89F09 /* PlaceViewModel.swift */; };
+		D7EAA5172B66DCFA00987C86 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EAA5162B66DCFA00987C86 /* LocationManager.swift */; };
+		D7EAA5192B66DD5F00987C86 /* RecreationMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EAA5182B66DD5F00987C86 /* RecreationMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +49,6 @@
 		D73E966F2B645E970032003A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73E96712B645E970032003A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D73E96732B645E970032003A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D73E96762B645E970032003A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D73E96782B645E980032003A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D73E967B2B645E980032003A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D73E967D2B645E980032003A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +57,16 @@
 		D73E968C2B645E980032003A /* DemoMVVM-C&MapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DemoMVVM-C&MapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73E96902B645E980032003A /* DemoMVVM_C_MapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMVVM_C_MapUITests.swift; sourceTree = "<group>"; };
 		D73E96922B645E980032003A /* DemoMVVM_C_MapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoMVVM_C_MapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D73E96A32B64697A0032003A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		D73E96A52B648B210032003A /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		D73E96AD2B64A2A00032003A /* RecreationMapTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecreationMapTabCoordinator.swift; sourceTree = "<group>"; };
+		D73E96AF2B64A34D0032003A /* ListTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTabCoordinator.swift; sourceTree = "<group>"; };
+		D73E96B12B64A38E0032003A /* ProfileTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabCoordinator.swift; sourceTree = "<group>"; };
+		D7BBBD302B6861BA00B89F09 /* PlacesLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesLookupView.swift; sourceTree = "<group>"; };
+		D7BBBD322B68794100B89F09 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		D7BBBD342B68818F00B89F09 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		D7EAA5162B66DCFA00987C86 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D7EAA5182B66DD5F00987C86 /* RecreationMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecreationMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +117,11 @@
 		D73E966E2B645E970032003A /* DemoMVVM-C&Map */ = {
 			isa = PBXGroup;
 			children = (
-				D73E966F2B645E970032003A /* AppDelegate.swift */,
-				D73E96712B645E970032003A /* SceneDelegate.swift */,
+				D73E969F2B6460800032003A /* Application */,
+				D73E96A02B64608B0032003A /* Coordinators */,
+				D73E96A12B64609B0032003A /* Modules */,
+				D73E96A22B64635E0032003A /* Utils */,
 				D73E96732B645E970032003A /* ViewController.swift */,
-				D73E96752B645E970032003A /* Main.storyboard */,
 				D73E96782B645E980032003A /* Assets.xcassets */,
 				D73E967A2B645E980032003A /* LaunchScreen.storyboard */,
 				D73E967D2B645E980032003A /* Info.plist */,
@@ -125,6 +144,166 @@
 				D73E96922B645E980032003A /* DemoMVVM_C_MapUITestsLaunchTests.swift */,
 			);
 			path = "DemoMVVM-C&MapUITests";
+			sourceTree = "<group>";
+		};
+		D73E969F2B6460800032003A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D73E966F2B645E970032003A /* AppDelegate.swift */,
+				D73E96712B645E970032003A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D73E96A02B64608B0032003A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D73E96AB2B6497440032003A /* AppCoordinator */,
+				D73E96AC2B6497D00032003A /* TabCoordinator */,
+				D73E96A72B6495690032003A /* ModuleCoordinators */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D73E96A12B64609B0032003A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA17292B69BD9B006869A3 /* RecreationMap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D73E96A22B64635E0032003A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D73E96A72B6495690032003A /* ModuleCoordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D73E96AA2B6495B00032003A /* SignIn */,
+				D73E96A92B6495A70032003A /* Main */,
+				D73E96A82B6495990032003A /* Onboarding */,
+			);
+			path = ModuleCoordinators;
+			sourceTree = "<group>";
+		};
+		D73E96A82B6495990032003A /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D73E96A92B6495A70032003A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D73E96AD2B64A2A00032003A /* RecreationMapTabCoordinator.swift */,
+				D73E96AF2B64A34D0032003A /* ListTabCoordinator.swift */,
+				D73E96B12B64A38E0032003A /* ProfileTabCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D73E96AA2B6495B00032003A /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		D73E96AB2B6497440032003A /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D73E96A32B64697A0032003A /* AppCoordinator.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		D73E96AC2B6497D00032003A /* TabCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D73E96A52B648B210032003A /* TabCoordinator.swift */,
+			);
+			path = TabCoordinator;
+			sourceTree = "<group>";
+		};
+		D7BBBD2F2B68617C00B89F09 /* PlacesLookupModule */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA17272B69BD43006869A3 /* Model */,
+				D7DA17262B69BD37006869A3 /* View */,
+				D7DA17252B69BD2C006869A3 /* ViewModel */,
+			);
+			path = PlacesLookupModule;
+			sourceTree = "<group>";
+		};
+		D7DA17232B69AEB2006869A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7EAA5162B66DCFA00987C86 /* LocationManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D7DA17242B69AEC7006869A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7EAA5182B66DD5F00987C86 /* RecreationMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7DA17252B69BD2C006869A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7BBBD342B68818F00B89F09 /* PlaceViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D7DA17262B69BD37006869A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7BBBD302B6861BA00B89F09 /* PlacesLookupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7DA17272B69BD43006869A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7BBBD322B68794100B89F09 /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7DA17282B69BD73006869A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7DA17292B69BD9B006869A3 /* RecreationMap */ = {
+			isa = PBXGroup;
+			children = (
+				D7EAA5132B66DB5A00987C86 /* RecreationMapModule */,
+				D7BBBD2F2B68617C00B89F09 /* PlacesLookupModule */,
+			);
+			path = RecreationMap;
+			sourceTree = "<group>";
+		};
+		D7EAA5132B66DB5A00987C86 /* RecreationMapModule */ = {
+			isa = PBXGroup;
+			children = (
+				D7DA17282B69BD73006869A3 /* Model */,
+				D7DA17242B69AEC7006869A3 /* View */,
+				D7DA17232B69AEB2006869A3 /* ViewModel */,
+			);
+			path = RecreationMapModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +412,6 @@
 			files = (
 				D73E967C2B645E980032003A /* LaunchScreen.storyboard in Resources */,
 				D73E96792B645E980032003A /* Assets.xcassets in Resources */,
-				D73E96772B645E970032003A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +437,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73E96742B645E970032003A /* ViewController.swift in Sources */,
+				D73E96AE2B64A2A00032003A /* RecreationMapTabCoordinator.swift in Sources */,
+				D73E96B22B64A38E0032003A /* ProfileTabCoordinator.swift in Sources */,
+				D7BBBD332B68794100B89F09 /* Place.swift in Sources */,
 				D73E96702B645E970032003A /* AppDelegate.swift in Sources */,
+				D7EAA5192B66DD5F00987C86 /* RecreationMapView.swift in Sources */,
 				D73E96722B645E970032003A /* SceneDelegate.swift in Sources */,
+				D73E96A62B648B210032003A /* TabCoordinator.swift in Sources */,
+				D73E96B02B64A34E0032003A /* ListTabCoordinator.swift in Sources */,
+				D7BBBD352B68818F00B89F09 /* PlaceViewModel.swift in Sources */,
+				D73E96A42B64697A0032003A /* AppCoordinator.swift in Sources */,
+				D7BBBD312B6861BA00B89F09 /* PlacesLookupView.swift in Sources */,
+				D7EAA5172B66DCFA00987C86 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +485,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D73E96752B645E970032003A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D73E96762B645E970032003A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D73E967A2B645E980032003A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,11 +625,13 @@
 				DEVELOPMENT_TEAM = 66SRZJ5G4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DemoMVVM-C&Map/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your geolocation in order to most occurately tell you the nearest interesting places.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,11 +655,13 @@
 				DEVELOPMENT_TEAM = 66SRZJ5G4U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DemoMVVM-C&Map/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your geolocation in order to most occurately tell you the nearest interesting places.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
