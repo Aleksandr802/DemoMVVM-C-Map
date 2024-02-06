@@ -7,6 +7,7 @@
 
 import Foundation
 import MapKit
+import Combine
 
 class LocationManager: NSObject, ObservableObject {
     
@@ -15,8 +16,10 @@ class LocationManager: NSObject, ObservableObject {
     
     @Published var searchText = ""
     
-    @Published var userLat: Double = 0.0
-    @Published var userLong: Double = 0.0
+    var cancellable: AnyCancellable?
+    
+//    @Published var userLat: Double = 0.0
+//    @Published var userLong: Double = 0.0
     
     @Published var region = MKCoordinateRegion(
         center: .init(latitude: 37.334_900, longitude: -122.009_020),
@@ -31,13 +34,19 @@ class LocationManager: NSObject, ObservableObject {
         
         //MARK: Requesting Location Acces
         manager.requestWhenInUseAuthorization()
+        cancellable = $searchText
+            .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
+            .removeDuplicates()
+            .sink(receiveValue: { value in
+                
+            })
     }
     
     func updateMapToUsersLocation() {
         let coordinate = manager.location!.coordinate
         region.center = coordinate
-        userLat = coordinate.latitude
-        userLong = coordinate.longitude
+//        userLat = coordinate.latitude
+//        userLong = coordinate.longitude
     }
 }
 
@@ -60,8 +69,10 @@ extension LocationManager: CLLocationManagerDelegate {
             handleLocationError()
         case .authorizedAlways:
             manager.requestLocation()
+            updateMapToUsersLocation()
         case .authorizedWhenInUse:
             manager.requestLocation()
+            updateMapToUsersLocation()
         default:
             ()
         }
@@ -77,8 +88,8 @@ extension LocationManager: CLLocationManagerDelegate {
                     center: location.coordinate,
                     span: .init(latitudeDelta: 0.01, longitudeDelta: 0.01)
                 )
-                self?.userLat = location.coordinate.latitude
-                self?.userLong = location.coordinate.longitude
+//                self?.userLat = location.coordinate.latitude
+//                self?.userLong = location.coordinate.longitude
             }
         }
     }
