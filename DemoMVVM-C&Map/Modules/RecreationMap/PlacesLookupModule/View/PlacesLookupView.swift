@@ -29,7 +29,6 @@ struct PlacesLookupView: View {
                 .onTapGesture {
                     returnedPlace = place
                     position = .region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: place.latitude, longitude: place.longitude), span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)))
-                    locationManager.updateMapToPlaceLocation(place: returnedPlace)
                     dismiss()
                 }
             }
